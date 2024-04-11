@@ -1,1 +1,239 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+//1st pattern squre
+    /*cout<<"printing all star";
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+           cout<<"*";
+
+             }
+              cout<<endl;
+        }*/
+//2nd pattern rightangle
+ /*   for(int i=1; i<=5; i++)
+    {
+        for(int j=1; j<=5; j++)
+        {
+            if(j<=i)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<"";
+            }
+        }
+        cout<<"\n";
+    }*/
+    // 3  print same coloumn same number
+
+   /* for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(j<=i){
+                cout<<j;
+            }
+           else{
+            cout<<"";
+           }
+
+
+        }
+        cout<<"\n";
+
+    }
+*/
+// 4 number print same row same number
+ /*for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(j<=i){
+                cout<<i;
+            }
+           else{
+            cout<<"";
+           }
+
+
+        }
+        cout<<"\n";
+
+    }
+
+*/
+// inverted right angle
+
+/*for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(j<=6-i){
+                cout<<"*";
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+
+    }
+*/
+// inverted same column same number
+/* for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(j<=6-i){
+                cout<<j;
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+
+    }
+
+    */
+
+ // priramid pattern
+ /* for(int i=1;i<=5;i++){
+        for(int j=1;j<=9;j++){
+            if(j>=6-i && j<=4+i){
+                cout<<"*";
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+
+ }  */
+//  inverted priramid pattern
+/*for(int i=1;i<=5;i++){
+        for(int j=1;j<=9;j++){
+            if(j>=i && j<=10-i){
+                cout<<"*";
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+}
+*/
+// Dimanod star pattern
+/*
+for(int i=1;i<=5;i++){
+        for(int j=1;j<=9;j++){
+            if(j>=6-i && j<=4+i){
+                cout<<"*";
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+}
+for(int i=1;i<=5;i++){
+        for(int j=1;j<=9;j++){
+            if(j>=i && j<=10-i){
+                cout<<"*";
+            }
+           else{
+            cout<<" ";
+           }
+
+
+        }
+        cout<<"\n";
+}
+
+
+//half dimond pattern
+/*int k=0;
+for(int i=1;i<=9;i++){
+        i<=5?k++:k--;
+    for(int j=1;j<=5;j++){
+        if(j<=k ){
+            cout<<"*";
+        }
+       else{
+           cout<<"";
+       }
+
+    }
+    cout<<"\n";
+}
+*/
+//binary number right angle
+/*int start=0;
+for(int i=0;i<5;i++){
+        if(start %2==0){
+            start=1;
+        }
+        else{
+            start=0;
+        }
+
+    for(int j=0;j<=i;j++){
+
+            cout<<start;
+            start=1-start;
+
+
+
+    }
+    cout<<"\n";
+}
+
+*/
+//increaseing number triangular pattern
+/*int x=1;
+for(int i=1;i<=5;i++){
+    for(int j=1;j<=i;j++){
+      cout<<x++;
+
+
+    }
+    cout<<"\n";
+}
+int x=1;
+for(int i=1;i<=5;i++){
+    for(int j=1;j<=i;j++){
+     if(){
+        cout<<i++;
+     }
+     else:{
+        cout<<"";
+     }
+    }
+    cout<<"\n";
+}
+*/
+  /*int k=0;
+for(int i=1;i<=9;i++){
+        i<=5?k++:k--;
+
+    for(int j=1;j<=9;j++){
+     if( j<=6-k||j>=4+k){
+        cout<<"*";
+     }
+     else{
+        cout<<" ";
+     }
+    }
+    cout<<"\n";
+}
+*/
+    return 0;
+}
+
 

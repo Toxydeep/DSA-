@@ -1,1 +1,31 @@
+//Day 7
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void countfre(int arr[], int n)
+{
+    vector<bool> vis(n, false);
+
+    for (int i = 0; i < n; i++) {
+        if (vis[i] == true)
+            continue;
+     int count = 1;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                vis[j] = true;
+                count++;
+            }
+        }
+        cout << arr[i] << " " << count << endl;
+    }
+}
+
+int main()
+{
+    int arr[] = {2,3,2,3,4,4};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    countfre(arr, n);
+    return 0;
+}
 

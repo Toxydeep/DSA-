@@ -1,1 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
 
+
+vector<int>vr;
+vr.push_back(4);
+vr.push_back(5);
+vr.push_back(6);
+//vector<int>::iterator i;
+//i=vr.begin();
+vr.insert(vr.begin()+3,8);
+vr.push_back(4);
+ for (auto i = vr.begin(); i != vr.end(); ++i)
+       cout << *i << " "<<vr.size();
+}

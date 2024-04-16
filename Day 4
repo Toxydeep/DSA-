@@ -14,3 +14,125 @@ vr.push_back(4);
  for (auto i = vr.begin(); i != vr.end(); ++i)
        cout << *i << " "<<vr.size();
 }
+// for list 
+// Day 6;
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+list<int>vr;
+vr.push_back(4);
+vr.push_back(5);
+vr.push_back(6);
+//vector<int>::iterator i;
+//i=vr.begin();
+
+vr.push_back(4);
+ for (auto i = vr.begin(); i != vr.end(); ++i)
+       cout << *i << " "<<vr.size();
+}
+//for deque
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+deque<int>vr;
+vr.push_back(4);
+vr.push_back(5);
+vr.push_back(6);
+//vector<int>::iterator i;
+//i=vr.begin();
+
+vr.push_front(9);
+ for (auto i = vr.begin(); i != vr.end(); ++i)
+       cout << *i << " "<<vr.size();
+}
+// stack
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+stack<int>vr;
+vr.push(4);
+vr.push(5);
+vr.push(6);
+cout<<vr.top();
+vr.pop();
+cout<<vr.top();
+cout<<vr.size();
+
+
+}
+//queue
+// Day 6;
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+queue<int>vr;
+vr.push(4);
+vr.push(5);
+vr.push(6);
+cout<<vr.back();
+vr.pop();
+//cout<<vr.top();
+cout<<vr.size();
+
+
+}
+//priority
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+priority_queue<int>vr;
+vr.push(4);
+vr.push(5);
+vr.push(6);
+cout<<vr.top();
+vr.top();
+//cout<<vr.top();
+cout<<vr.size();
+
+
+}
+// set
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+set<int>vr;
+vr.insert(4);
+vr.emplace(5);
+vr.insert(6);
+auto i =vr.find(4);
+vr.erase(i);
+auto i =vr.lower_bond(5);
+auto i =vr.upper_bond(5);
+//cout<<vr.top();
+cout<<vr.size();
+
+
+}
+// multi_set
+
+// Day 6;
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+multiset<int>vr;
+vr.insert(4);
+vr.emplace(5);
+vr.insert(6);
+vr.insert(4);
+vr.erase(4);
+int nt=vr.count(4);
+
+//cout<<vr.top();
+}

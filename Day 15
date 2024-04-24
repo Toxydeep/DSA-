@@ -1,0 +1,42 @@
+// Median of two sorted arrays.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>vr;
+    int a[]= {1,2};
+    int b[]= {3,4};
+    int n = sizeof(a)/sizeof(a[1]);
+    int m= sizeof(b)/sizeof(b[1]);
+    for(int i=0; i<n; i++)
+    {
+        vr.push_back( a[i]);
+
+    }
+    for(int i=0; i<m; i++)
+    {
+
+        vr.push_back (b[i]);
+    }
+
+
+    sort(vr.begin(),vr.end());
+
+    int k= vr.size();
+
+
+    sort(vr.begin(),vr.end());
+    if (k%2==1)
+    {
+        cout<<vr[k/2];
+
+    }
+    else
+    {
+        int v1 =vr[(k/2)-1];
+        int v2=vr[k/2];
+        cout<<float((v1+v2)/2.0);
+    }
+}

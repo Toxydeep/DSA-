@@ -1,0 +1,49 @@
+// problem statement:-Product of array except self 
+// process :-
+//first ex
+a[5]={a,b,c,d,e}
+find prefix
+pre[5]={1,a,ab,abc,abcd}
+find sufix
+suf[5]={bcde,cde,de,e,1}
+then multiply b/w prefix & sufix;
+result[5]={bcde,acde,abde,abce,abcd}
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+int arr[4]={1,2,3,4};
+int n=4;
+vector<int>prix(n);
+vector<int>sufix(n);
+
+
+//for prix
+prix[0]=1;
+for(int i=1;i<n;i++){
+    prix[i]=prix[i-1]*arr[i-1];
+
+}
+//for sufix
+sufix[n-1]=1;
+for(int i=n-2;i<=0;i--){
+    sufix[i]=sufix[i+1]*arr[i+1];
+}
+//muti b/w sufix & prix
+vector<int>mult;
+for(int i=0;i<n;i++){
+    mult[i]=prix[i]*sufix[i];
+
+}
+for(int i=0;i<n;i++){
+    mult[i];
+
+}
+
+
+}
